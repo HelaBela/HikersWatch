@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.helenafranczak.hikerswatch.MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="596dp"
+        android:layout_height="657dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/sun" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/CategoryStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Hiker's Watch" />
+
+
+    <TextView
+        android:id="@+id/accTextView"
+        style="@style/CategoryStyle2"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/altTextView"
+        android:layout_alignStart="@+id/altTextView"
+        android:text="Accuracy: 12.23"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/altTextView"
+        style="@style/CategoryStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/latTextView"
+        android:layout_alignStart="@+id/latTextView"
+        android:layout_alignParentLeft="true"
+        android:text="Altitude: 12.23"
+        android:textColor="@android:color/white" />
+
+
+
+    <TextView
+        android:id="@+id/latTextView"
+        style="@style/CategoryStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/longTextView"
+        android:layout_alignStart="@+id/longTextView"
+        android:text="Latidue: 12.23"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/longTextView"
+        style="@style/CategoryStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="9dp"
+        android:text="Latidue: 12.23"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/addTextView"
+        style="@style/CategoryStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/accTextView"
+        android:layout_alignBottom="@+id/accTextView"
+        android:layout_alignParentEnd="true"
+        android:text="Address:\n123 Fake Street\nFake Town"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>
